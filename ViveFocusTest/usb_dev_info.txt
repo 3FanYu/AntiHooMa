@@ -1,0 +1,5 @@
+adb server is out of date.  killing...
+* daemon started successfully *
+List of devices attached 
+FA89HJJ00096	device
+
