@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Tales From The Rift/Splash/Splash.unity
+    guid: 311613df2bf5a2e40ab512c871ee694f
+  - enabled: 1
     path: "Assets/Scenes/\u88F9\u8457\u7CD6\u8863\u7684\u60E1\u9B54\u507D\u88DD\u8005\u7684\u9677\u9631.unity"
     guid: b79fda0605e87f349bb668e5a7f53b02
   - enabled: 1

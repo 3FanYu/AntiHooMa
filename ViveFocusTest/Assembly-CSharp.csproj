@@ -136,6 +136,7 @@
     <Compile Include="Assets\Script\SceneOne.cs" />
     <Compile Include="Assets\Script\SceneOneTestMode.cs" />
     <Compile Include="Assets\Script\SoundManager.cs" />
+    <Compile Include="Assets\Tales From The Rift\Splash\SplashController.cs" />
     <Compile Include="Assets\WaveVR\Extra\Beam.cs" />
     <Compile Include="Assets\WaveVR\Extra\ControllerConnectionStateReactor.cs" />
     <Compile Include="Assets\WaveVR\Extra\ControllerFadeManager.cs" />

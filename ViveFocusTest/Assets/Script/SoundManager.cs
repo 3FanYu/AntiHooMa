@@ -6,7 +6,7 @@ public class SoundManager : MonoBehaviour
 {
     public static AudioClip CarCrash, FootStep, clip1, clip2, clip3, clip4, clip5, clip6, clip7, clip8, clip9,
         clip10, clip11, clip12, clip13, clip14, clip15, clip16, clip17, clip18, clip19, clip20, clip21, clip22, clip23, clip24,
-        clip25, clip26, clip27, clip28, clip29, clip30, clip31, True, False, Click, Yay, Title1;
+        clip25, clip26, clip27, clip28, clip29, clip30, clip31, True, False, Click, Yay, Title1, Sad, BGM;
     static AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +14,7 @@ public class SoundManager : MonoBehaviour
         CarCrash = Resources.Load<AudioClip>("CarCrash");
         FootStep = Resources.Load<AudioClip>("walkingSound");
 
+        Sad = Resources.Load<AudioClip>("Sad");
         Title1 = Resources.Load<AudioClip>("前言");
         True= Resources.Load<AudioClip>("True");
         False = Resources.Load<AudioClip>("False");
@@ -51,7 +52,10 @@ public class SoundManager : MonoBehaviour
         clip29 = Resources.Load<AudioClip>("Scene1/29");
         clip30 = Resources.Load<AudioClip>("Scene1/30");
         clip31 = Resources.Load<AudioClip>("Scene1/31");
-        
+
+        BGM = Resources.Load<AudioClip>("bgm");
+
+
         audioSrc = GetComponent<AudioSource>();
     }
 
@@ -64,6 +68,9 @@ public class SoundManager : MonoBehaviour
     {
         switch (clip)
         {
+            case "Sad":
+                audioSrc.PlayOneShot(Sad);
+                break;
             case "Title1":
                 audioSrc.PlayOneShot(Title1);
                 break;
